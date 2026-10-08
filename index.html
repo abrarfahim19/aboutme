@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of H M Abrar Fahim Patwari - AI Engineer & Research Enthusiast">
+  <meta name="author" content="H M Abrar Fahim Patwari">
+  <title>H M Abrar Fahim Patwari | AI Engineer</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #555555;
+      --border: #e5e5e5;
+      --accent: #0969da;
+      --tag-bg: #f4f4f5;
+      --tag-text: #3f3f46;
+      --card-bg: #fafafa;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1117;
+        --text: #e6edf3;
+        --text-muted: #8b949e;
+        --border: #30363d;
+        --accent: #58a6ff;
+        --tag-bg: #161b22;
+        --tag-text: #c9d1d9;
+        --card-bg: #161b22;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 2.5rem 1.25rem 4rem;
+      max-width: 740px;
+      margin: 0 auto;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: text-decoration 0.2s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .name {
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+    }
+
+    .title {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .contact-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    section {
+      margin-bottom: 2.75rem;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+    }
+
+    .summary-text {
+      font-size: 1rem;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .item {
+      margin-bottom: 1.5rem;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.25rem 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .item-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .item-subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .item-date {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    ul.item-details {
+      list-style-type: disc;
+      padding-left: 1.25rem;
+      margin-top: 0.4rem;
+      font-size: 0.925rem;
+      color: var(--text);
+    }
+
+    ul.item-details li {
+      margin-bottom: 0.35rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.15rem 0.55rem;
+      background-color: var(--tag-bg);
+      color: var(--tag-text);
+      border-radius: 4px;
+      font-weight: 500;
+      border: 1px solid var(--border);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+      font-size: 0.925rem;
+    }
+
+    .skill-category {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .skill-category-name {
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--text-muted);
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    footer {
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        max-width: 100%;
+        color: #000;
+        background: #fff;
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+      .tag {
+        border: 1px solid #ccc;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="name">H M Abrar Fahim Patwari</h1>
+    <p class="title">AI Engineer &sim; Research Enthusiast</p>
+    <div class="contact-links">
+      <span>📍 Cottbus, Germany</span>
+      <a href="mailto:patwahma@b-tu.de">✉️ patwahma@b-tu.de</a>
+      <a href="tel:+4915164317805">📞 +49 15 16 43 17 805</a>
+      <a href="https://github.com/abrarfahim19" target="_blank" rel="noopener noreferrer">🐙 github.com/abrarfahim19</a>
+      <a href="https://linkedin.com/in/imabrar" target="_blank" rel="noopener noreferrer">🔗 in/imabrar</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p class="summary-text">
+        AI Engineer equipped with applied knowledge of Application Development and Machine Learning, with a strong interest in computer vision and academic research.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">CTO &amp; Co-Founder</span>
+            <span class="item-subtitle">&middot; Museful</span>
+          </div>
+          <span class="item-date">01/2025 &ndash; Present</span>
+        </div>
+        <ul class="item-details">
+          <li>Led the development and implementation of AI-driven personalization features across 4 museums.</li>
+          <li>Collaborated with curators, designers, and engineers to create an intuitive, inclusive user experience.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Computer Vision</span>
+          <span class="tag">LLM</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">LangChain</span>
+          <span class="tag">CI/CD</span>
+          <span class="tag">GCP</span>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Software Engineer</span>
+            <span class="item-subtitle">&middot; Swop Technologies</span>
+          </div>
+          <span class="item-date">09/2022 &ndash; 01/2024</span>
+        </div>
+        <ul class="item-details">
+          <li>Developed SWOP, a versatile mobile app for seamless management of Ethereum and Polygon cryptocurrencies.</li>
+          <li>Implemented customizable user profiles for digital business cards and lead generation.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">React Native</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Web3</span>
+          <span class="tag">Blockchain</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Edge-Optimized Semantic Segmentation</span>
+            <span class="item-subtitle">&middot; Computer Vision</span>
+          </div>
+          <a class="item-date" href="https://github.com/abrarfahim19" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+        </div>
+        <ul class="item-details">
+          <li>Built PyTorch semantic segmentation pipeline with BiSeNetV2-MobileNetV3 achieving 1.2M parameters and 25 FPS on edge devices.</li>
+          <li>Trained on Cityscapes dataset achieving 33.76% mIoU and 92.93% IoU on road detection, optimized for autonomous driving applications.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">BiSeNetV2</span>
+          <span class="tag">MobileNetV3</span>
+          <span class="tag">Cityscapes</span>
+          <span class="tag">Edge AI</span>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Temporalising Fusion Model for Drivers Facial Expression Recognition</span>
+            <span class="item-subtitle">&middot; Research Module</span>
+          </div>
+        </div>
+        <ul class="item-details">
+          <li>Added temporal layer (GRU / 1-D Convolution) increasing recognition performance from 97% to 99%.</li>
+          <li>Reduced misclassification of different and similar expressions on the KMU-FED dataset.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Deep Learning</span>
+          <span class="tag">GRU</span>
+          <span class="tag">1D CNN</span>
+          <span class="tag">KMU-FED</span>
+          <span class="tag">Computer Vision</span>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Museful App</span>
+            <span class="item-subtitle">&middot; Web Application</span>
+          </div>
+        </div>
+        <ul class="item-details">
+          <li>Created GraphRAG solution to mitigate hallucinations and Personalization Engine for diverse user groups.</li>
+          <li>Developed analytics dashboard for museums to understand visitor behaviour.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">GraphRAG</span>
+          <span class="tag">LLM</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Analytics</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <span class="skill-category-name">Languages</span>
+          <div class="skill-list">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">SQL</span>
+            <span class="tag">HTML</span>
+            <span class="tag">C++</span>
+            <span class="tag">C</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <span class="skill-category-name">Frameworks &amp; ML</span>
+          <div class="skill-list">
+            <span class="tag">PyTorch</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">ONNX</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Django</span>
+            <span class="tag">React</span>
+            <span class="tag">React Native</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <span class="skill-category-name">Technologies &amp; Cloud</span>
+          <div class="skill-list">
+            <span class="tag">Docker</span>
+            <span class="tag">GCP</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Git</span>
+            <span class="tag">JIRA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <article class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">MSc. in Artificial Intelligence</span>
+            <span class="item-subtitle">&middot; Brandenburgische Technische Universit&auml;t Cottbus-Senftenberg, Germany</span>
+          </div>
+          <span class="item-date">10/2024 &ndash; Present</span>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">BSc. in Applied Mathematics</span>
+            <span class="item-subtitle">&middot; Noakhali Science and Technology University, Bangladesh</span>
+          </div>
+          <span class="item-date">01/2017 &ndash; 06/2022</span>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.2rem;">Grade: 1.9</p>
+      </article>
+    </section>
+
+    <section id="publications-certifications">
+      <h2>Publication &amp; Certification</h2>
+
+      <article class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Estimation of the Basic Reproduction Number of SARS-CoV-2 in Bangladesh Using Exponential Growth Method</span>
+            <span class="item-subtitle">&middot; ResearchGate</span>
+          </div>
+          <span class="item-date">2020</span>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Machine Learning Specialization</span>
+            <span class="item-subtitle">&middot; Stanford University (Coursera)</span>
+          </div>
+          <span class="item-date">2024</span>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.2rem;">Supervised, Unsupervised, Advanced Machine Learning Algorithms</p>
+      </article>
+    </section>
+
+    <section id="languages">
+      <h2>Languages</h2>
+      <div class="skill-list">
+        <span class="tag">Bengali (Native)</span>
+        <span class="tag">English (C1)</span>
+        <span class="tag">Deutsch (A2)</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 H M Abrar Fahim Patwari &middot; Hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
